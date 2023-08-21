@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme-style" rel="stylesheet" href="light.css">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
+
+    <style>
+        /* Стилі для овалу та тіні для h1 */
+            h1 {
+            display: inline-block;
+            padding: 10px 20px;
+	    background: linear-gradient(to bottom right, #b042f5, #8a30e8); /* Градієнтний фон */
+            color: white; /* Змінено колір тексту на білий */
+            
+            border-radius: 50px; /* Задаємо більший радіус для овала */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+	/* Стилі для заголовка h2 з овалом */
+            h2 {
+            display: inline-block;
+            padding: 10px 20px;
+	    background: linear-gradient(to bottom right, #b042f5, #8a30e8); /* Градієнтний фон */
+            color: white; /* Змінено колір тексту на білий */
+            
+            border-radius: 50px; /* Задаємо більший радіус для овала */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+    <title>Моя особиста сторінка</title>
+</head>
+<body class="light-theme">
+    <header>
+        <div class="switch-container">
+            <h1>Моя особиста сторінка</h1>
+            <input type="checkbox" id="theme-toggle-checkbox">
+            <label id="theme-toggle-label" for="theme-toggle-checkbox" class="switch">
+                <div class="switch-inner"></div>
+            </label>
+        </div>
+    </header>
+ 
+    <main>
+        <section>
+            <h2>Особисті дані</h2>
+            <p><strong>Ім'я:</strong> Руслан</p>
+            <p><strong>Адреса електронної пошти:</strong> Ruslan.Novikov@infiz.khpi.edu.ua</p>
+        </section>
+        
+        <section>
+    <h2>Залікова книжка</h2>
+    <div class="grades-table">
+        <table id="grades-table" class="centered-table">
+            <tr>
+                <th>Предмет</th>
+                <th>Викладач</th>
+                <th>Нац.</th>
+		<th>Бал.</th>
+		<th>ECTS</th>
+            </tr>
+            <tr>
+                <td>Математична логіка, теорія алгоритмів та структури даних</td>
+                <td>Татарінова О.А. [КМПС]</td>
+                <td>4</td>
+		<td>75</td>
+		<td>C</td>
+            </tr>
+            <tr>
+                <td>Об'єктно-орієнтоване програмування. Ч2</td>
+                <td>Шаповалова Ма.Іг. [ММІ]</td>
+                <td>3</td>
+		<td>60</td>
+		<td>E</td>
+            </tr>
+            <tr>
+                <td>Спеціальні глави математики для моделювання та обробки даних</td>
+                <td>Вязовиченко Ю.А. [ММІ]</td>
+                <td>3</td>
+		<td>63</td>
+		<td>E</td>
+            </tr>
+            <tr>
+                <td>Технології програмування</td>
+                <td>Шаповалова Ма.Іг. [ММІ]</td>
+                <td>3</td>
+		<td>60</td>
+		<td>E</td>
+            </tr>
+            <tr>
+                <td>Іноземна мова</td>
+                <td>Сергіна С.В. [ІМ]</td>
+                <td>3</td>
+		<td>61</td>
+		<td>E</td>
+            </tr>
+            <tr>
+                <td>Операційні системи та засоби комп'ютерної безпеки</td>
+                <td>Мєтєльов В.О. [КМПС]</td>
+                <td>5</td>
+		<td>92</td>
+		<td>A</td>
+            </tr>
+            <tr>
+                <td>Правознавство</td>
+                <td>Гаряєва Г.М. [П]</td>
+                <td>5</td>
+		<td>90</td>
+		<td>A</td>
+            </tr>
+            <tr>
+                <td>Теорія і методика фізичного самовдосконалення</td>
+                <td>Азаренкова Л.Л. [ФВ]</td>
+                <td>4</td>
+		<td>75</td>
+		<td>C</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+        <section>
+    <h2>Улюблені фільми та ТВ-шоу</h2>
+    <div class="movie-list">
+        <div class="movie">
+            <div class="image-container">
+                <img src="alone_at_home_5.jpg" alt="Сам вдома 5">
+            </div>
+            <p class="movie-title">
+                <a href="https://uafilm.tv/6300-sam-udoma-5-svyatkove-pograbuvannya.html">Сам вдома 5</a>
+            </p>
+        </div>
+        <div class="movie">
+            <div class="image-container">
+                <img src="1+1.jpg" alt="1+1">
+            </div>
+            <p class="movie-title">
+                <a href="https://www.ivi.tv/watch/109726">1+1</a>
+            </p>
+        </div>
+        <div class="movie">
+            <div class="image-container">
+                <img src="JUMANJI.jpg" alt="Джуманджі">
+            </div>
+            <p class="movie-title">
+                <a href="https://eneyida.tv/1434-dzhumandzhi-poklyk-dzhungliv.html">Джуманджі</a>
+            </p>
+        </div>
+        <div class="movie">
+            <div class="image-container">
+                <img src="Killers_bodyguard.jpg" alt="Тілоохоронець кілера">
+            </div>
+            <p class="movie-title">
+                <a href="https://uafilm.tv/7050-tloohoronec-klera.html">Тілоохоронець кілера</a>
+            </p>
+        </div>
+        <div class="movie">
+            <div class="image-container">
+                <img src="Blood_diamond.jpg" alt="Кривавий діамант">
+            </div>
+            <p class="movie-title">
+                <a href="https://uafilm.tv/6814-krivaviy-damant.html">Кривавий діамант</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+	<style>
+    .movie-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .movie {
+        flex: 1;
+        text-align: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+
+    .movie-title {
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .movie-title a {
+        text-decoration: none;
+        color: #333;
+        background-color: #f5f5f5;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .movie-title a:hover {
+        background-color: #ddd;
+    }
+	
+    /* Стилі для посилань <a> під фото */
+        .movie a {
+            display: block;
+            text-align: center;
+            font-size: 1.5em;
+            color: white; /* Змінено колір тексту на білий */
+            text-decoration: none;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: linear-gradient(to bottom right, #AD8CEA, #50DFB2); /* Градієнтний фон */
+            border-radius: 50px; /* Задаємо більший радіус для овала */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+    @media (max-width: 768px) {
+        .movie-list {
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .movie {
+            text-align: center;
+        }
+        
+        .movie-title {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+</style>
+
+        <section>
+            <h2>Три слова якими мене можна описати</h2>
+            <p>Прямолінійний, наполегливий, лінивий.</p>
+        </section>
+        
+        <section>
+    <h2>Настрої</h2>
+    <div class="mood-image-row">
+        <div class="mood-image-container">
+            <img class="mood-image" src="happy.jpg" alt="Щасливий">
+            <p>Щасливий</p>
+        </div>
+        <div class="mood-image-container">
+            <img class="mood-image" src="sad.jpg" alt="Сумний">
+            <p>Сумний</p>
+        </div>
+        <div class="mood-image-container">
+            <img class="mood-image" src="current-mood.jpg" alt="Зараз">
+            <p>Зараз</p>
+        </div>
+    </div>
+</section>
+ 
+	<style>
+    .mood-image-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mood-image-container {
+        text-align: center;
+        max-width: 30%; /* Змініть відповідно до потреб */
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .mood-image {
+        max-width: 100%;
+        height: auto;
+        filter: blur(3px);
+        transition: filter 0.3s ease;
+    }
+
+    .mood-image-container:hover .mood-image {
+        filter: none;
+    }
+
+    .mood-image-container p {
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+
+        <section>
+            <h2>Улюблена цитата</h2>
+            <blockquote>
+                "Гроші — це інструмент, який може покращити якість вашого життя, якщо ви вміло ним користуєтеся." - Бенджамін Франклін
+            </blockquote>
+        </section>
+        
+        <section>
+            <h2>Місце народження</h2>
+	    <div class="map-container">
+            <p>Лозова - це місто обласного підпорядкування в Східному регіоні України, адміністративний центр Лозівського району Харківської області. Одне з найцікавіших аспектів міста пов'язане з його залізничною спадщиною.</p>
+
+		<p>1. Залізнична історія: Лозова відома своєю важливою залізничною історією. У 1861 році тут було відкрито одну з перших залізничних станцій в Україні, що сприяло розвитку транспортних зв'язків і торгівлі в регіоні.</p>
+
+		<p>2. Залізничний технічний університет: Місто є домівкою для Лозівського національного університету ім. І.С. Тургенєва, який спеціалізується на залізничних технологіях та транспортному менеджменті. Університет відіграє 			важливу роль у підготовці фахівців для транспортної галузі.</p>
+
+		<p>3. Культурне спадщина: В місті можна знайти кілька історичних та архітектурних пам'яток. Серед них - Андріївська церква, зведена в стилі модерн у початку XX століття.</p>
+
+		<p>4. Географічне розташування: Лозова розташована на північному сході України, недалеко від кордону з Росією. Це створює стратегічно важливе положення для торгівлі та транспортування товарів між двома країнами.</p>
+
+		<p>5. Екологія та природа: Місто оточене живописними лісами та полями. Це робить його привабливим місцем для природолюбів та людей, які цінують спокійне середовище поза міською метушею.</p>
+
+		<p>6. Спорт та відпочинок: У Лозові також існують спортивні споруди та майданчики для активного відпочинку, такі як стадіони, спортивні комплекси, парки і сквери.</p>
+
+		<p>Це лише декілька аспектів міста Лозова, які роблять його цікавим та значущим в контексті історії, культури та транспорту України.</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83939.21125676754!2d36.23343295990871!3d48.894424647118946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df2f3ee2d01dbf%3A0xa7357ad1ebda3552!2sLozova%2C%20Kharkiv%20Oblast%2C%20Ukraine!5e0!3m2!1sen!2sde!4v1691769623416!5m2!1sen!2sde" width="400" height="325" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Руслан. Усі права захищено.</p>
+    </footer>
+
+    <!-- Підключення JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

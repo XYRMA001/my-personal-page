@@ -1,0 +1,58 @@
+/* Стилі для таблиці з обведенням */
+        table#grades-table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #b042f5; /* Колір та товщина обводки */
+            color: black; /* Колір тексту в таблиці */
+        }
+
+        table#grades-table th,
+        table#grades-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+	.switch-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+	}
+
+	#theme-toggle-checkbox {
+    	display: none;
+	}
+
+	.switch {
+    	position: relative;
+    	display: inline-block;
+    	width: 50px;
+    	height: 26px;
+    	background-color: #d0d0d0;
+    	border-radius: 13px;
+    	cursor: pointer;
+    	transition: background-color 0.3s ease;
+    	margin-left: 10px;
+	}
+
+	.switch-inner {
+    	position: absolute;
+    	top: 2px;
+    	left: 2px;
+    	width: 22px;
+    	height: 22px;
+    	background-color: white;
+    	border-radius: 50%;
+    	transition: transform 0.3s ease;
+	}
+
+	#theme-toggle-checkbox:checked + .switch {
+    	background-color: #2fd15a;
+	}
+
+	#theme-toggle-checkbox:checked + #theme-toggle-label .switch .switch-inner {
+ 	   transform: translateX(24px);
+	}

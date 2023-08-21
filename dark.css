@@ -1,0 +1,20 @@
+.dark-theme {
+            background-color: black;
+        }
+	
+	/* Стилі для таблиці на темному фоні */
+        .dark-theme table#grades-table {
+            color: white; /* Змінено колір тексту на білий */
+        }
+
+        /* Змінено колір границь внутрішніх комірок на білий */
+        .dark-theme table#grades-table th,
+        .dark-theme table#grades-table td {
+            border: 1px solid white;
+        }
+	
+	/* Змінено колір тексту <p> та <blockquote> на білий */
+        .dark-theme p,
+        .dark-theme blockquote {
+            color: white;
+        }
